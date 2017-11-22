@@ -17,6 +17,7 @@ public class Evento {
 
 	private void ListaParticipantes() {
 		for(int i=0;i<ImportaCSV.contato.length;i++) {
+			
 		 System.out.print(ImportaCSV.contato[i]);	
 	}
 	

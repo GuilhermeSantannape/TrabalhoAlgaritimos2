@@ -4,7 +4,7 @@ public class Funcao {
 	
 	private static int Tam=3;
 	private static	String[] Funcao = new String[Tam];
-	public static  void DeclaraFuncao  () {
+	private static  void DeclaraFuncao  () {
 		String inti1="palestrante";
 		Funcao[0]=inti1;
 		String inti2="organizador";
@@ -14,7 +14,6 @@ public class Funcao {
 	
 		
 		}
-
 	
 	private static void MostraFuncao() {
 		for(int i=0;i<Tam;i++){
@@ -22,7 +21,7 @@ public class Funcao {
 
 	}
 	
-	public static void EscolhePalestrante() {
+	private static void EscolhePalestrante() {
 
 		Scanner dig= new Scanner(System.in);
 		int codfuncao=1;
@@ -51,7 +50,7 @@ public class Funcao {
 		
 	}
 	
-	public static void EscolheOrganizador() {
+	private static void EscolheOrganizador() {
 
 		
 		Scanner dig= new Scanner(System.in);
@@ -76,7 +75,7 @@ public class Funcao {
 			Pessoas.MostraParticiantes();
 		}
 
-	public static void EscolheParticipantes() {
+	private static void EscolheParticipantes() {
 		Scanner dig= new Scanner(System.in);
 		int codfuncao=2;
 		boolean condicao=true;
@@ -117,6 +116,26 @@ public class Funcao {
 			Pessoas.MostraParticiantes();
 		}
 	
+	
+	public static void  getMostraFuncao() {
+		MostraFuncao();
+	}
+	public static void  getDeclaraFuncao() {
+		DeclaraFuncao();
+	}
+		
+	public static void  getEscolhePalestrante() {
+		EscolhePalestrante();
+	}
+		
+	public static void  getEscolheOrganizador() {
+		EscolheOrganizador();
+	}
+	public static void  getEscolheParticipantes() {
+		EscolheParticipantes();
+	}
+	
+		
 		
 	}
 	
